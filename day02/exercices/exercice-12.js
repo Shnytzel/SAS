@@ -1,22 +1,30 @@
 /**
  * ─────────────────────────────────────────────────────────────
- * JOUR 01 · EXERCICE 12 · NIVEAU 2 : CONSOLIDATION (INTERMÉDIAIRES)
- * ANNÉE BISSEXTILE
+ * JOUR 02 · EXERCICE 12 · NIVEAU 2 : CONSOLIDATION (INTERMÉDIAIRES)
+ * NOMBRE PREMIER
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
- * Une année est bissextile si elle est divisible par 4 MAIS pas par 100, OU BIEN si elle est divisible par 400. Déclarez annee = 2024. Écrivez la condition et affichez un message.
- *
- * RÉSULTAT ATTENDU
- * 2024 est une année bissextile.
+ * Un nombre est premier s'il n'est divisible que par 1 et par lui-même. Prenez let nb = 29. Bouclez de 2 jusqu'à 28 pour voir si un nombre le divise. Si ce n'est pas le cas, affichez "29 est un nombre premier".
  *
  * 📖 Consigne détaillée : ../03-exercices.md#exercice-12
- * ▶️ Commande : node day01/exercices/exercice-12.js
+ * ▶️ Commande : node day02/exercices/exercice-12.js
  */
 'use strict';
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
-let année = 2024
-if (année % 4 === 0 && année % 100 !== 0) {console.log("2024 est une année bissextile")}
+let nb = 28
+let A = true
+for (let i = 2; i < nb; i++) {
+  if (nb % i === 0) {
+    A = false 
+    break
+  }
+}
+if (A == true) {
+  console.log(nb + " est un nombre premier")
+}else {
+  console.log(nb + " n'est pas un nombre premier")
+}

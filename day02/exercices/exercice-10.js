@@ -1,22 +1,26 @@
 /**
  * ─────────────────────────────────────────────────────────────
- * JOUR 01 · EXERCICE 12 · NIVEAU 2 : CONSOLIDATION (INTERMÉDIAIRES)
- * ANNÉE BISSEXTILE
+ * JOUR 02 · EXERCICE 10 · NIVEAU 2 : CONSOLIDATION (INTERMÉDIAIRES)
+ * LA FACTORIELLE
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
- * Une année est bissextile si elle est divisible par 4 MAIS pas par 100, OU BIEN si elle est divisible par 400. Déclarez annee = 2024. Écrivez la condition et affichez un message.
+ * Calculez la factorielle de 6 (écrit 6! = 6 * 5 * 4 * 3 * 2 * 1) avec une boucle.
  *
  * RÉSULTAT ATTENDU
- * 2024 est une année bissextile.
+ * 720
  *
- * 📖 Consigne détaillée : ../03-exercices.md#exercice-12
- * ▶️ Commande : node day01/exercices/exercice-12.js
+ * 📖 Consigne détaillée : ../03-exercices.md#exercice-10
+ * ▶️ Commande : node day02/exercices/exercice-10.js
  */
 'use strict';
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
-let année = 2024
-if (année % 4 === 0 && année % 100 !== 0) {console.log("2024 est une année bissextile")}
+let b = 6
+let sum=1
+for (let a=1;a<=b;a++){
+    sum = sum * a
+}
+console.log(sum)
