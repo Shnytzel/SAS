@@ -15,3 +15,14 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+for (let c = 1; c <= 9; c++) {
+  for (let d = 0; d <= 9; d++) {
+    for (let u = 0; u <= 9; u++) {
+      let nb = c * 100 + d * 10 + u
+      let sommeCubes = (c * c * c) + (d * d * d) + (u * u * u)
+      if (sommeCubes === nb) {
+        console.log(nb + " est un nombre d'Armstrong")
+      }
+    }
+  }
+}
